@@ -11,13 +11,7 @@ const DirectLineChat = () => {
     const fetchToken = async () => {
       try {
         const response = await fetch(
-          "https://directline.botframework.com/v3/directline/tokens/generate",
-          {
-            method: "POST",
-            headers: {
-              Authorization: `Bearer oi-Sse1_QH0.W_gEtYm1ZfG78DO9ImiOZJAE3hjVvEkzwaTkRXML6wM`,
-            },
-          }
+          "https://defaulte996fb66b9774a40ae92c5096c0964e.4.environment.api.preprod.powerplatform.com/powervirtualagents/botsbyschema/cr77d_copilotTestJai/directline/token?api-version=2022-03-01-preview",
         );
         const data = await response.json();
         const token = data.token;
